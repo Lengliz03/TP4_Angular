@@ -1,0 +1,7 @@
+<input [(ngModel)]="newMessage" placeholder="Add a new message...">
+<button (click)="addMessage()">Add Message</button>
+<button (click)="removeLastMessage()">Remove Last Message</button>
+
+<ul>
+  <li *ngFor="let message of messages">{{ message }}</li>
+</ul>
